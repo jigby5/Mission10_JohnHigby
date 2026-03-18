@@ -6,8 +6,9 @@ function App() {
 
   return (
     <>
-      <Heading />
-      <BowlerList />
+      <div className="container"><Heading /></div>
+      <br />
+      <div className="container"><BowlerList /></div>
     </>
   );
 }

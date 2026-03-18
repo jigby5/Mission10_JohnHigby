@@ -31,16 +31,14 @@ function BowlerList() {
                 <tbody>
                     {bowlers.map((b) => (
                         <tr key={b.bowlerId}>
-                            <td>
-                                {b.bowlerFirstName} {b.bowlerMiddleInit} {b.bowlerLastName}
-                            </td>
-                            <td>{b.team?.teamName}</td>
+                            <td>{b.bowlerFirstName} {b.bowlerMiddleInit} {b.bowlerLastName}</td>
+                            <td className="team-cell">{b.team?.teamName}</td> 
                             <td>{b.bowlerAddress}</td>
                             <td>{b.bowlerCity}</td>
                             <td>{b.bowlerState}</td>
                             <td>{b.bowlerZip}</td>
                             <td>{b.bowlerPhoneNumber}</td>
-                        </tr>
+                        </tr>       
                     ))}
                 </tbody>
             </table>
